@@ -21,5 +21,17 @@ O peso definitivo de um canal não é medido por quantas vezes ele foi o último
 ## 📊 Visualização e Impacto
 Os resultados consolidados foram exportados e conectados ao **Looker Studio**, gerando um painel interativo que contrasta o modelo tradicional com o modelo probabilístico. Essa visão permite que a equipe de Growth remaneje o orçamento de aquisição de leads com base em dados acionáveis, reduzindo o CAC global.
 
+
+## 🤖 Machine Learning: Previsão de Abandono (Churn de Funil)
+
+Para complementar a análise retrospectiva da Cadeia de Markov, este projeto emprega modelagem preditiva para antecipar o comportamento futuro do usuário. Utilizando **Regressão Logística**, os logs de navegação brutos foram transformados em features comportamentais para prever a probabilidade exata de um lead abandonar o funil antes de concluir a compra (Churn de Funil).
+
+### Impacto Executivo e Acionabilidade
+
+Em vez de operar como uma "caixa preta" preditiva, o modelo foi desenhado para entregar respostas claras à diretoria e insumos diretos para a equipe de CRM:
+
+* **Análise de Causalidade (Feature Importance):** Mapeamento matemático das alavancas de retenção. O modelo isola e quantifica o impacto de cada comportamento (ex: acessar via Google, quantidade de touchpoints), indicando exatamente o que o time de Produto e Mídia Paga precisa otimizar para segurar o cliente no site.
+* **Distribuição de Risco e Retenção Ativa:** Escoragem de toda a base de usuários ativos, com uma linha de corte estratégica para a "Zona de Risco" (propensão de abandono > 75%). A saída do pipeline é uma lista segmentada, permitindo o disparo imediato de campanhas de remarketing focadas na recuperação de receita antes que a evasão ocorra.
+
 ---
 *Este projeto demonstra a capacidade de transformar grandes volumes de dados brutos em informações precisas e acionáveis, automatizando pipelines de dados e documentando componentes arquiteturais de ponta a ponta.*
